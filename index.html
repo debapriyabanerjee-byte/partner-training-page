@@ -1,81 +1,112 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Training Hub</title>
+  <title>Elevest Training</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       background: #f4f6f9;
+      color: #333;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 40px 20px;
       text-align: center;
     }
 
-    .header {
-      background: #d32f2f;
-      color: white;
-      padding: 20px;
+    .hero h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
+    .highlight {
+      background: #ffcc00;
+      color: #000;
+      display: inline-block;
+      padding: 8px 15px;
+      border-radius: 20px;
+      margin-top: 10px;
+      font-weight: bold;
     }
 
     .container {
       padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section {
+      background: white;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .section img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
     }
 
     h2 {
-      color: #333;
-      margin-top: 30px;
-    }
-
-    .card {
-      background: white;
-      padding: 15px;
-      margin: 15px auto;
-      border-radius: 10px;
-      max-width: 600px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      text-align: left;
-    }
-
-    .card img {
-      width: 100%;
-      border-radius: 10px;
+      margin-bottom: 10px;
     }
 
     ul {
       padding-left: 20px;
+      line-height: 1.6;
     }
 
     .cta-container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
       gap: 20px;
+      justify-content: center;
       margin-top: 30px;
     }
 
     .cta {
+      flex: 1;
+      min-width: 260px;
       background: white;
       padding: 20px;
-      width: 260px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
 
     .cta a {
       display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
+      margin-top: 12px;
+      padding: 12px 18px;
       background: #007bff;
       color: white;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .cta a:hover {
+      background: #0056b3;
     }
 
     .footer {
-      margin-top: 40px;
-      padding: 20px;
-      background: #eee;
+      text-align: center;
+      padding: 25px;
+      margin-top: 30px;
+      background: #111;
+      color: white;
     }
 
   </style>
@@ -83,55 +114,68 @@
 
 <body>
 
-  <!-- HEADER -->
-  <div class="header">
-    <h1>🚀 Health Insurance Training</h1>
-    <p>15 Apr 2026 – 22 Apr 2026</p>
+  <!-- HERO -->
+  <div class="hero">
+    <h1>🚀 Elevest Training</h1>
+    <p>Ek Customer = Multiple Income Opportunities</p>
+    <div class="highlight">📅 22 April 2026 | ⏰ 3:00 PM</div>
   </div>
 
   <div class="container">
 
+    <!-- HOOK -->
+    <div class="section">
+      <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4">
+      <h2>💡 Why This Training Matters</h2>
+      <p>
+        Most partners sell one product per customer.  
+        Top earners don’t.
+      </p>
+      <p>
+        They maximize every customer interaction to generate multiple income streams.
+      </p>
+      <p><strong>This is exactly what Elevest helps you unlock.</strong></p>
+    </div>
+
     <!-- WHAT YOU WILL LEARN -->
-    <h2>📘 What You Will Learn</h2>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f" />
+    <div class="section">
+      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
+      <h2>📘 What You Will Learn</h2>
       <ul>
-        <li>Understanding customer needs in health insurance</li>
-        <li>How to position the right product</li>
-        <li>Using tools to recommend policies</li>
-        <li>Increasing conversion through better pitching</li>
-        <li>Common mistakes to avoid</li>
+        <li>How to earn more from the same customer</li>
+        <li>Cross-sell strategies across financial products</li>
+        <li>Simplified approach to increase ticket size</li>
+        <li>How top partners maximize every opportunity</li>
+        <li>Practical frameworks you can apply immediately</li>
       </ul>
     </div>
 
     <!-- BENEFITS -->
-    <h2>🎯 Benefits of the Training</h2>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" />
+    <div class="section">
+      <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31">
+      <h2>🎯 What You Gain</h2>
       <ul>
-        <li>Increase your earnings potential</li>
-        <li>Better confidence while selling</li>
-        <li>Faster deal closures</li>
-        <li>Improved customer trust</li>
-        <li>Access to exclusive tools</li>
+        <li>Higher income without increasing leads</li>
+        <li>Better customer value & retention</li>
+        <li>Stronger positioning as a trusted advisor</li>
+        <li>Clarity on what to sell next</li>
+        <li>Real earning growth using Elevest Power</li>
       </ul>
     </div>
 
-    <!-- CTA SECTION -->
+    <!-- CTA -->
     <div class="cta-container">
 
-      <!-- CTA 1 -->
       <div class="cta">
         <h3>❤️ Health Recommender</h3>
-        <p>Get smart policy suggestions instantly</p>
-        <a href="YOUR_HEALTH_LINK">Open Tool</a>
+        <p>Start recommending smarter & faster</p>
+        <a href="https://whatsapp.com/channel/0029VbALGi9GE56r6HZq3o0m">Explore Now</a>
       </div>
 
-      <!-- CTA 2 -->
       <div class="cta">
-        <h3>📲 Join WhatsApp Community</h3>
-        <p>Get regular updates & support</p>
-        <a href="YOUR_WHATSAPP_LINK">Join Now</a>
+        <h3>📲 WhatsApp Community</h3>
+        <p>Get updates, reminders & support</p>
+        <a href="https://healthplan-ai.vercel.app/">Join Now</a>
       </div>
 
     </div>
@@ -140,7 +184,7 @@
 
   <!-- FOOTER -->
   <div class="footer">
-    <p>Stay updated. Keep growing. 🚀</p>
+    <p>Don’t just sell more. Earn smarter. 🚀</p>
   </div>
 
 </body>
