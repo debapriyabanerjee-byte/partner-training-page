@@ -6,95 +6,110 @@
 
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background: #f4f6f9;
-      color: #333;
-    }
-
-    .hero {
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 16px;
-      opacity: 0.9;
-    }
-
-    .highlight {
-      background: #ffcc00;
-      color: #000;
-      display: inline-block;
-      padding: 8px 15px;
-      border-radius: 20px;
-      margin-top: 10px;
-      font-weight: bold;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f7fa;
+      color: #222;
     }
 
     .container {
-      padding: 20px;
-      max-width: 900px;
+      max-width: 700px;
       margin: auto;
+      padding: 16px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 24px 16px;
+      background: linear-gradient(135deg, #0f2027, #203a43);
+      color: white;
+      border-radius: 0 0 20px 20px;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .hero p {
+      margin-top: 8px;
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    .badge {
+      margin-top: 12px;
+      display: inline-block;
+      background: #ffd54f;
+      color: #000;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 13px;
     }
 
     .section {
-      background: white;
-      padding: 20px;
       margin-top: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      background: white;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.06);
     }
 
     .section img {
       width: 100%;
-      border-radius: 10px;
-      margin-bottom: 15px;
+      height: auto;
+      display: block;
+    }
+
+    .content {
+      padding: 16px;
     }
 
     h2 {
-      margin-bottom: 10px;
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+
+    p {
+      margin: 0 0 10px;
+      font-size: 14px;
+      line-height: 1.5;
     }
 
     ul {
-      padding-left: 20px;
-      line-height: 1.6;
+      padding-left: 18px;
+      font-size: 14px;
     }
 
-    .cta-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-      margin-top: 30px;
+    .cta-box {
+      margin-top: 24px;
+      display: grid;
+      gap: 16px;
     }
 
     .cta {
-      flex: 1;
-      min-width: 260px;
       background: white;
-      padding: 20px;
+      padding: 18px;
       border-radius: 12px;
       text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+    }
+
+    .cta h3 {
+      margin-bottom: 8px;
     }
 
     .cta a {
       display: inline-block;
-      margin-top: 12px;
-      padding: 12px 18px;
+      margin-top: 10px;
+      padding: 12px 16px;
       background: #007bff;
       color: white;
-      text-decoration: none;
       border-radius: 6px;
+      text-decoration: none;
       font-weight: bold;
+      font-size: 14px;
     }
 
     .cta a:hover {
@@ -102,11 +117,11 @@
     }
 
     .footer {
-      text-align: center;
-      padding: 25px;
       margin-top: 30px;
-      background: #111;
-      color: white;
+      font-size: 11px;
+      text-align: center;
+      padding: 20px;
+      color: #666;
     }
 
   </style>
@@ -117,74 +132,76 @@
   <!-- HERO -->
   <div class="hero">
     <h1>🚀 Elevest Training</h1>
-    <p>Ek Customer = Multiple Income Opportunities</p>
-    <div class="highlight">📅 22 April 2026 | ⏰ 3:00 PM</div>
+    <p>Ek Customer = Multiple Income</p>
+    <div class="badge">22 April | 3:00 PM</div>
   </div>
 
   <div class="container">
 
-    <!-- HOOK -->
+    <!-- CONFUSION -->
     <div class="section">
-      <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4">
-      <h2>💡 Why This Training Matters</h2>
-      <p>
-        Most partners sell one product per customer.  
-        Top earners don’t.
-      </p>
-      <p>
-        They maximize every customer interaction to generate multiple income streams.
-      </p>
-      <p><strong>This is exactly what Elevest helps you unlock.</strong></p>
+      <img src="confusion.png">
+      <div class="content">
+        <h2>Why Most Partners Miss Income</h2>
+        <p>Too many products. No clear approach.</p>
+        <p><strong>Result: One customer = one income.</strong></p>
+      </div>
     </div>
 
-    <!-- WHAT YOU WILL LEARN -->
+    <!-- CLARITY -->
     <div class="section">
-      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
-      <h2>📘 What You Will Learn</h2>
-      <ul>
-        <li>How to earn more from the same customer</li>
-        <li>Cross-sell strategies across financial products</li>
-        <li>Simplified approach to increase ticket size</li>
-        <li>How top partners maximize every opportunity</li>
-        <li>Practical frameworks you can apply immediately</li>
-      </ul>
+      <img src="clarity.png">
+      <div class="content">
+        <h2>What Elevest Changes</h2>
+        <p>Simple, structured way to cross-sell and increase earnings per customer.</p>
+      </div>
     </div>
 
-    <!-- BENEFITS -->
+    <!-- GROWTH -->
     <div class="section">
-      <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31">
-      <h2>🎯 What You Gain</h2>
-      <ul>
-        <li>Higher income without increasing leads</li>
-        <li>Better customer value & retention</li>
-        <li>Stronger positioning as a trusted advisor</li>
-        <li>Clarity on what to sell next</li>
-        <li>Real earning growth using Elevest Power</li>
-      </ul>
+      <img src="growth.png">
+      <div class="content">
+        <h2>Your Income Growth</h2>
+        <ul>
+          <li>Earn more from same customer</li>
+          <li>Increase ticket size</li>
+          <li>Build long-term value</li>
+          <li>No need for extra leads</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TRAINING -->
+    <div class="section">
+      <img src="health.png">
+      <div class="content">
+        <h2>Training Details</h2>
+        <p><strong>22 April 2026 | 3:00 PM</strong></p>
+        <p>Learn to recommend the right health plan & maximize income.</p>
+      </div>
     </div>
 
     <!-- CTA -->
-    <div class="cta-container">
+    <div class="cta-box">
 
       <div class="cta">
         <h3>❤️ Health Recommender</h3>
-        <p>Start recommending smarter & faster</p>
-        <a href="https://whatsapp.com/channel/0029VbALGi9GE56r6HZq3o0m">Explore Now</a>
+        <p>Recommend smarter. Close faster.</p>
+        <a href="https://healthplan-ai.vercel.app/">Open Tool</a>
       </div>
 
       <div class="cta">
         <h3>📲 WhatsApp Community</h3>
-        <p>Get updates, reminders & support</p>
-        <a href="https://healthplan-ai.vercel.app/">Join Now</a>
+        <p>Get updates & reminders</p>
+        <a href="https://whatsapp.com/channel/0029VbALGi9GE56r6HZq3o0m">Join Now</a>
       </div>
 
     </div>
 
   </div>
 
-  <!-- FOOTER -->
   <div class="footer">
-    <p>Don’t just sell more. Earn smarter. 🚀</p>
+    Mutual Fund investments are subject to market risks. Read all scheme related documents carefully.
   </div>
 
 </body>
