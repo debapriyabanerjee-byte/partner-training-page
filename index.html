@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Elevest Training</title>
+  <title>RISE India Training</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -12,28 +12,23 @@
       color: #222;
     }
 
-    .container {
-      max-width: 700px;
-      margin: auto;
-      padding: 16px;
-    }
-
     .hero {
+      padding: 28px 16px;
       text-align: center;
-      padding: 24px 16px;
       background: linear-gradient(135deg, #0f2027, #203a43);
       color: white;
-      border-radius: 0 0 20px 20px;
     }
 
     .hero h1 {
       margin: 0;
-      font-size: 24px;
+      font-size: 22px;
+      letter-spacing: 1px;
     }
 
-    .hero p {
+    .hero h2 {
       margin-top: 8px;
-      font-size: 14px;
+      font-size: 16px;
+      font-weight: normal;
       opacity: 0.9;
     }
 
@@ -48,8 +43,14 @@
       font-size: 13px;
     }
 
+    .container {
+      max-width: 720px;
+      margin: auto;
+      padding: 16px;
+    }
+
     .section {
-      margin-top: 20px;
+      margin-top: 18px;
       background: white;
       border-radius: 14px;
       overflow: hidden;
@@ -59,20 +60,22 @@
     .section img {
       width: 100%;
       height: auto;
+      max-height: 260px; /* 👈 Controls visual size */
+      object-fit: cover; /* 👈 Keeps it premium crop */
       display: block;
     }
 
     .content {
-      padding: 16px;
+      padding: 14px;
     }
 
-    h2 {
-      margin: 0 0 8px;
-      font-size: 18px;
+    h3 {
+      margin: 0 0 6px;
+      font-size: 17px;
     }
 
     p {
-      margin: 0 0 10px;
+      margin: 0 0 8px;
       font-size: 14px;
       line-height: 1.5;
     }
@@ -80,12 +83,13 @@
     ul {
       padding-left: 18px;
       font-size: 14px;
+      margin: 0;
     }
 
     .cta-box {
       margin-top: 24px;
       display: grid;
-      gap: 16px;
+      gap: 14px;
     }
 
     .cta {
@@ -94,10 +98,6 @@
       border-radius: 12px;
       text-align: center;
       box-shadow: 0 6px 16px rgba(0,0,0,0.06);
-    }
-
-    .cta h3 {
-      margin-bottom: 8px;
     }
 
     .cta a {
@@ -110,10 +110,6 @@
       text-decoration: none;
       font-weight: bold;
       font-size: 14px;
-    }
-
-    .cta a:hover {
-      background: #0056b3;
     }
 
     .footer {
@@ -131,42 +127,44 @@
 
   <!-- HERO -->
   <div class="hero">
-    <h1>🚀 Elevest Training</h1>
-    <p>Ek Customer = Multiple Income</p>
+    <h1>🚀 RISE India Training Program</h1>
+    <h2>Featuring: Elevest – Ek Customer, Multiple Income</h2>
     <div class="badge">22 April | 3:00 PM</div>
   </div>
 
   <div class="container">
 
-    <!-- CONFUSION -->
+    <!-- PROBLEM -->
     <div class="section">
       <img src="confusion.png">
       <div class="content">
-        <h2>Why Most Partners Miss Income</h2>
+        <h3>Why Most Partners Miss Income</h3>
         <p>Too many products. No clear approach.</p>
         <p><strong>Result: One customer = one income.</strong></p>
       </div>
     </div>
 
-    <!-- CLARITY -->
+    <!-- SOLUTION -->
     <div class="section">
       <img src="clarity.png">
       <div class="content">
-        <h2>What Elevest Changes</h2>
-        <p>Simple, structured way to cross-sell and increase earnings per customer.</p>
+        <h3>Elevest Changes This</h3>
+        <p>
+          Learn a simple, structured way to cross-sell and increase income per customer.
+        </p>
       </div>
     </div>
 
-    <!-- GROWTH -->
+    <!-- VALUE -->
     <div class="section">
       <img src="growth.png">
       <div class="content">
-        <h2>Your Income Growth</h2>
+        <h3>What You Will Gain</h3>
         <ul>
-          <li>Earn more from same customer</li>
-          <li>Increase ticket size</li>
-          <li>Build long-term value</li>
-          <li>No need for extra leads</li>
+          <li>Higher income from same customer</li>
+          <li>Better cross-sell conversion</li>
+          <li>Stronger customer relationships</li>
+          <li>More value without more leads</li>
         </ul>
       </div>
     </div>
@@ -175,9 +173,11 @@
     <div class="section">
       <img src="health.png">
       <div class="content">
-        <h2>Training Details</h2>
-        <p><strong>22 April 2026 | 3:00 PM</strong></p>
-        <p>Learn to recommend the right health plan & maximize income.</p>
+        <h3>Session Focus</h3>
+        <p><strong>Health Plan Recommendation</strong></p>
+        <p>
+          Learn how to recommend the right health plan and maximize earnings using Elevest.
+        </p>
       </div>
     </div>
 
