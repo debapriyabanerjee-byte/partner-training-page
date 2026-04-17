@@ -4,7 +4,6 @@
   <title>RISE India Training</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Premium Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
@@ -32,7 +31,6 @@
       font-size: 15px;
       font-weight: 300;
       margin-top: 6px;
-      opacity: 0.9;
     }
 
     .badge {
@@ -50,6 +48,7 @@
       max-width: 720px;
       margin: auto;
       padding: 18px;
+      padding-bottom: 100px; /* space for sticky CTA */
     }
 
     .section {
@@ -60,7 +59,6 @@
       box-shadow: 0 8px 20px rgba(0,0,0,0.06);
     }
 
-    /* ✅ FIXED IMAGE ISSUE */
     .section img {
       width: 100%;
       height: auto;
@@ -90,47 +88,63 @@
       line-height: 1.6;
     }
 
-    li {
-      margin-bottom: 6px;
-    }
-
-    .cta-box {
-      margin-top: 26px;
-      display: grid;
-      gap: 16px;
-    }
-
-    .cta {
+    /* TRAINER */
+    .trainer {
+      margin-top: 24px;
       background: white;
-      padding: 20px;
-      border-radius: 14px;
-      text-align: center;
+      border-radius: 16px;
+      overflow: hidden;
       box-shadow: 0 8px 20px rgba(0,0,0,0.06);
     }
 
-    .cta h3 {
+    .trainer img {
+      width: 100%;
+      display: block;
+    }
+
+    .trainer-content {
+      padding: 16px;
+    }
+
+    .trainer h3 {
       margin-bottom: 6px;
     }
 
-    .cta p {
+    .trainer p {
       font-size: 13px;
-      color: #555;
     }
 
-    .cta a {
-      display: inline-block;
-      margin-top: 12px;
-      padding: 12px 18px;
-      background: #007bff;
-      color: white;
+    /* STICKY CTA */
+    .sticky-cta {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: white;
+      display: flex;
+      gap: 10px;
+      padding: 10px;
+      box-shadow: 0 -4px 12px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    .sticky-cta a {
+      flex: 1;
+      text-align: center;
+      padding: 12px;
       border-radius: 8px;
       text-decoration: none;
+      font-size: 13px;
       font-weight: 600;
-      font-size: 14px;
+      color: white;
     }
 
-    .cta a:hover {
-      background: #0056b3;
+    .cta-health {
+      background: #007bff;
+    }
+
+    .cta-wa {
+      background: #25D366;
     }
 
     .footer {
@@ -171,7 +185,7 @@
       <div class="content">
         <h3>Elevest Changes the Game</h3>
         <p>
-          A simple, structured way to recommend multiple products and increase earnings from every customer interaction.
+          A simple, structured way to recommend multiple products and increase earnings from every customer.
         </p>
       </div>
     </div>
@@ -184,8 +198,8 @@
         <ul>
           <li>Higher income from existing customers</li>
           <li>Stronger cross-sell ability</li>
-          <li>Better customer trust & retention</li>
-          <li>Growth without chasing more leads</li>
+          <li>Better customer trust</li>
+          <li>Growth without more leads</li>
         </ul>
       </div>
     </div>
@@ -195,30 +209,29 @@
       <img src="health.png">
       <div class="content">
         <h3>Session Focus</h3>
-        <p><strong>Learn to Recommend the Right Health Plan</strong></p>
+        <p><strong>Health Plan Recommendation</strong></p>
+        <p>Learn how to recommend the right plan and maximize income.</p>
+      </div>
+    </div>
+
+    <!-- TRAINER -->
+    <div class="trainer">
+      <img src="elevesttrainer.png">
+      <div class="trainer-content">
+        <h3>Learn from an Expert</h3>
         <p>
-          Practical approach to suggest the right plan and maximize your earning potential using Elevest.
+          Shikhar Raj Gupta — Mutual Fund Distribution Specialist with 4+ years of experience
+          helping partners grow their business and simplify investments.
         </p>
       </div>
     </div>
 
-    <!-- CTA -->
-    <div class="cta-box">
+  </div>
 
-      <div class="cta">
-        <h3>Health Recommender</h3>
-        <p>Start recommending smarter today</p>
-        <a href="https://healthplan-ai.vercel.app/">Open Tool</a>
-      </div>
-
-      <div class="cta">
-        <h3>WhatsApp Community</h3>
-        <p>Get reminders, updates & support</p>
-        <a href="https://whatsapp.com/channel/0029VbALGi9GE56r6HZq3o0m">Join Now</a>
-      </div>
-
-    </div>
-
+  <!-- STICKY CTA -->
+  <div class="sticky-cta">
+    <a href="https://healthplan-ai.vercel.app/" class="cta-health">Health Tool</a>
+    <a href="https://whatsapp.com/channel/0029VbALGi9GE56r6HZq3o0m" class="cta-wa">Join Community</a>
   </div>
 
   <div class="footer">
