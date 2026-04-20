@@ -33,15 +33,37 @@
       margin-top: 6px;
     }
 
-    .badge {
+    /* HERO CTA ROW */
+    .hero-cta {
       margin-top: 14px;
-      display: inline-block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .badge {
       background: #ffd54f;
       color: #000;
       padding: 6px 14px;
       border-radius: 20px;
       font-weight: 600;
       font-size: 13px;
+    }
+
+    .join-btn {
+      background: #00c853;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 13px;
+      text-decoration: none;
+    }
+
+    .join-btn:hover {
+      background: #009624;
     }
 
     .container {
@@ -132,7 +154,13 @@
   <div class="hero">
     <h1>RISE India Training Program</h1>
     <h2>Featuring Elevest – Ek Customer, Multiple Income</h2>
-    <div class="badge">22 April | 3:00 PM</div>
+
+    <div class="hero-cta">
+      <div class="badge">22 April | 3:00 PM</div>
+      <a href="https://zoom.us/j/94053955110?pwd=pElVaZh8vTPu9Naoq6dlwIkwLSMGzo.1" class="join-btn">
+        Join Live Session
+      </a>
+    </div>
   </div>
 
   <div class="container">
@@ -147,8 +175,8 @@
           Learn how to use Elevest to unlock multiple income opportunities from a single customer interaction.
         </p>
         <p>
-          This session will help you identify the right cross-sell opportunities, position multiple products confidently, 
-          and increase your overall earnings without increasing your leads.
+          Identify cross-sell opportunities, position multiple products confidently,
+          and increase your earnings without increasing leads.
         </p>
       </div>
     </div>
@@ -159,7 +187,7 @@
       <div class="content">
         <h3>Why Most Partners Miss Income</h3>
         <p>
-          Most partners focus on selling one product at a time, missing out on the full earning potential of each customer.
+          Most partners sell only one product per customer, missing the full earning potential.
         </p>
         <p><strong>Result: Limited income despite strong effort.</strong></p>
       </div>
@@ -171,10 +199,10 @@
       <div class="content">
         <h3>What Elevest Enables</h3>
         <p>
-          Elevest gives you a structured approach to recommend multiple relevant products in a single conversation.
+          A structured way to recommend multiple relevant products in one conversation.
         </p>
         <p>
-          It simplifies decision-making for the customer while helping you maximize income per interaction.
+          Simplifies decisions for customers while maximizing your income per interaction.
         </p>
       </div>
     </div>
@@ -183,8 +211,12 @@
 
   <!-- STICKY CTA -->
   <div class="sticky-cta">
-    <a href="https://zoom.us/j/94053955110?pwd=pElVaZh8vTPu9Naoq6dlwIkwLSMGzo.1" class="cta-join">Join Session</a>
-    <a href="https://whatsapp.com/channel/0029VbALGi9GE56r6HZq3o0m" class="cta-wa">WhatsApp</a>
+    <a href="https://zoom.us/j/94053955110?pwd=pElVaZh8vTPu9Naoq6dlwIkwLSMGzo.1" class="cta-join">
+      Join Session
+    </a>
+    <a href="https://whatsapp.com/channel/0029VbALGi9GE56r6HZq3o0m" class="cta-wa">
+      WhatsApp
+    </a>
   </div>
 
   <div class="footer">
