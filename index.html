@@ -1,148 +1,159 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>RISE India Training</title>
+  <title>Motor Offline Journey Masterclass</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #f6f8fb;
-      color: #1a1a1a;
+
+    body{
+      margin:0;
+      font-family:'Poppins',sans-serif;
+      background:#f5f7fb;
+      color:#1a1a1a;
     }
 
-    .hero {
-      padding: 30px 20px;
-      text-align: center;
-      background: linear-gradient(135deg, #0f2027, #203a43);
-      color: white;
+    .hero{
+      background:linear-gradient(135deg,#0f2027,#203a43);
+      color:white;
+      padding:40px 20px;
+      text-align:center;
     }
 
-    .hero h1 {
-      font-size: 24px;
-      margin: 0;
-      font-weight: 600;
+    .hero h1{
+      margin:0;
+      font-size:28px;
+      line-height:1.3;
     }
 
-    .hero h2 {
-      font-size: 15px;
-      font-weight: 300;
-      margin-top: 6px;
+    .hero p{
+      margin-top:12px;
+      font-size:15px;
+      opacity:0.9;
     }
 
-    /* HERO CTA ROW */
-    .hero-cta {
-      margin-top: 14px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
+    .hero-cta{
+      margin-top:20px;
+      display:flex;
+      justify-content:center;
+      gap:12px;
+      flex-wrap:wrap;
     }
 
-    .badge {
-      background: #ffd54f;
-      color: #000;
-      padding: 6px 14px;
-      border-radius: 20px;
-      font-weight: 600;
-      font-size: 13px;
+    .badge{
+      background:#ffd54f;
+      color:#000;
+      padding:10px 16px;
+      border-radius:30px;
+      font-weight:600;
+      font-size:14px;
     }
 
-    .join-btn {
-      background: #00c853;
-      color: white;
-      padding: 8px 14px;
-      border-radius: 20px;
-      font-weight: 600;
-      font-size: 13px;
-      text-decoration: none;
+    .join-btn{
+      background:#00c853;
+      color:white;
+      padding:10px 18px;
+      border-radius:30px;
+      font-weight:600;
+      text-decoration:none;
+      font-size:14px;
     }
 
-    .join-btn:hover {
-      background: #009624;
+    .container{
+      max-width:760px;
+      margin:auto;
+      padding:18px;
+      padding-bottom:110px;
     }
 
-    .container {
-      max-width: 720px;
-      margin: auto;
-      padding: 18px;
-      padding-bottom: 100px;
+    .section{
+      background:white;
+      border-radius:18px;
+      overflow:hidden;
+      margin-top:20px;
+      box-shadow:0 8px 24px rgba(0,0,0,0.06);
     }
 
-    .section {
-      margin-top: 20px;
-      background: white;
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    .section img{
+      width:100%;
+      display:block;
     }
 
-    .section img {
-      width: 100%;
-      height: auto;
-      display: block;
+    .content{
+      padding:20px;
     }
 
-    .content {
-      padding: 18px;
+    h2{
+      margin-top:0;
+      font-size:22px;
     }
 
-    h3 {
-      font-size: 18px;
-      margin-bottom: 8px;
-      font-weight: 600;
+    h3{
+      margin-top:0;
+      font-size:18px;
     }
 
-    p {
-      font-size: 14px;
-      line-height: 1.6;
-      margin-bottom: 10px;
-      color: #444;
+    p{
+      font-size:14px;
+      line-height:1.7;
+      color:#444;
     }
 
-    /* STICKY CTA */
-    .sticky-cta {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background: white;
-      display: flex;
-      gap: 10px;
-      padding: 10px;
-      box-shadow: 0 -4px 12px rgba(0,0,0,0.1);
-      z-index: 1000;
+    ul{
+      padding-left:18px;
+      line-height:1.8;
+      font-size:14px;
     }
 
-    .sticky-cta a {
-      flex: 1;
-      text-align: center;
-      padding: 12px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 13px;
-      font-weight: 600;
-      color: white;
+    .highlight{
+      background:#eef6ff;
+      border-left:4px solid #007bff;
+      padding:14px;
+      border-radius:10px;
+      margin-top:15px;
+      font-size:14px;
+      line-height:1.6;
     }
 
-    .cta-join {
-      background: #007bff;
+    .sticky-cta{
+      position:fixed;
+      bottom:0;
+      left:0;
+      width:100%;
+      background:white;
+      display:flex;
+      gap:10px;
+      padding:10px;
+      box-shadow:0 -4px 14px rgba(0,0,0,0.1);
+      z-index:999;
     }
 
-    .cta-wa {
-      background: #25D366;
+    .sticky-cta a{
+      flex:1;
+      text-align:center;
+      padding:14px;
+      border-radius:10px;
+      text-decoration:none;
+      color:white;
+      font-weight:600;
+      font-size:14px;
     }
 
-    .footer {
-      margin-top: 30px;
-      font-size: 11px;
-      text-align: center;
-      padding: 20px;
-      color: #777;
+    .cta-register{
+      background:#007bff;
+    }
+
+    .cta-wa{
+      background:#25D366;
+    }
+
+    .footer{
+      padding:20px;
+      text-align:center;
+      font-size:11px;
+      color:#777;
     }
 
   </style>
@@ -151,76 +162,126 @@
 <body>
 
   <!-- HERO -->
+
   <div class="hero">
-    <h1>RISE India Training Program</h1>
-    <h2>Featuring Elevest – Ek Customer, Multiple Income</h2>
+
+    <h1>Close Motor Deals Faster.<br>Stress Less.</h1>
+
+    <p>
+      Join our free live masterclass and learn the easiest way
+      to complete the Motor Offline Journey with confidence.
+    </p>
 
     <div class="hero-cta">
-      <div class="badge">22 April | 3:00 PM</div>
-      <a href="https://zoom.us/j/94053955110?pwd=pElVaZh8vTPu9Naoq6dlwIkwLSMGzo.1" class="join-btn">
-        Join Live Session
+
+      <div class="badge">
+        13 May 2026 | 3 PM – 4 PM
+      </div>
+
+      <a 
+      href="YOUR_ZOOM_LINK?utm_source=landingpage&utm_medium=herocta&utm_campaign=motor_training"
+      class="join-btn">
+      Register Free
       </a>
+
     </div>
+
   </div>
 
   <div class="container">
 
-    <!-- SESSION FOCUS -->
+    <!-- SESSION -->
+
     <div class="section">
-      <img src="health.png">
+
+      <img src="motorhero.png">
+
       <div class="content">
-        <h3>Session Focus</h3>
-        <p><strong>How to Earn More from Every Customer</strong></p>
+
+        <h2>Motor Offline Journey Masterclass</h2>
+
         <p>
-          Learn how to use Elevest to unlock multiple income opportunities from a single customer interaction.
+          This practical 1-hour training session is designed to help you
+          simplify the motor insurance sales process and close deals faster.
         </p>
-        <p>
-          Identify cross-sell opportunities, position multiple products confidently,
-          and increase your earnings without increasing leads.
-        </p>
+
+        <div class="highlight">
+          No complicated process.<br>
+          No confusion.<br>
+          Just a simpler way to sell motor insurance better.
+        </div>
+
       </div>
+
     </div>
 
-    <!-- PROBLEM -->
+    <!-- LEARNING -->
+
     <div class="section">
-      <img src="confusion.png">
+
+      <img src="process.png">
+
       <div class="content">
-        <h3>Why Most Partners Miss Income</h3>
-        <p>
-          Most partners sell only one product per customer, missing the full earning potential.
-        </p>
-        <p><strong>Result: Limited income despite strong effort.</strong></p>
+
+        <h3>What You Will Learn</h3>
+
+        <ul>
+          <li>How the Motor Offline Journey works — step by step</li>
+          <li>Ways to avoid common delays and mistakes</li>
+          <li>How to improve customer confidence during the process</li>
+          <li>Practical tips to close deals faster</li>
+          <li>Simple actions you can apply immediately</li>
+        </ul>
+
       </div>
+
     </div>
 
-    <!-- SOLUTION -->
+    <!-- BENEFIT -->
+
     <div class="section">
-      <img src="clarity.png">
+
+      <img src="success.png">
+
       <div class="content">
-        <h3>What Elevest Enables</h3>
+
+        <h3>Why You Should Attend</h3>
+
         <p>
-          A structured way to recommend multiple relevant products in one conversation.
+          Most delays happen because the process feels complicated.
         </p>
+
         <p>
-          Simplifies decisions for customers while maximizing your income per interaction.
+          This session helps you simplify conversations, reduce confusion,
+          and improve your ability to convert customers confidently.
         </p>
+
       </div>
+
     </div>
 
   </div>
 
   <!-- STICKY CTA -->
+
   <div class="sticky-cta">
-    <a href="https://zoom.us/j/94053955110?pwd=pElVaZh8vTPu9Naoq6dlwIkwLSMGzo.1" class="cta-join">
-      Join Session
+
+    <a 
+    href="YOUR_ZOOM_LINK?utm_source=landingpage&utm_medium=stickycta&utm_campaign=motor_training"
+    class="cta-register">
+    Register Free
     </a>
-    <a href="https://whatsapp.com/channel/0029VbALGi9GE56r6HZq3o0m" class="cta-wa">
-      WhatsApp
+
+    <a 
+    href="https://whatsapp.com/channel/0029VbALGi9GE56r6HZq3o0m?utm_source=landingpage&utm_medium=whatsappcta&utm_campaign=motor_training"
+    class="cta-wa">
+    WhatsApp Updates
     </a>
+
   </div>
 
   <div class="footer">
-    Mutual Fund investments are subject to market risks. Read all scheme related documents carefully.
+    Training intended for partners only.
   </div>
 
 </body>
