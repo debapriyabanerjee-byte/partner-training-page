@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Motor Offline Journey Masterclass</title>
 
@@ -11,7 +11,6 @@
     rel="stylesheet">
 
   <style>
-
     * {
       box-sizing: border-box;
     }
@@ -19,33 +18,55 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: #f5f5f5;
+      background: #f4f5f7;
       color: #1a1a1a;
     }
+
+    /* HERO */
 
     .hero {
       background: linear-gradient(135deg, #8B0000, #C62828);
       color: white;
-      padding: 40px 20px;
+      padding: 42px 20px 36px;
       text-align: center;
     }
 
     .hero h1 {
       margin: 0;
-      font-size: 34px;
+      font-size: 40px;
       line-height: 1.3;
       font-weight: 700;
     }
 
-    .hero p {
-      margin-top: 16px;
-      font-size: 15px;
-      line-height: 1.7;
-      opacity: 0.95;
+    .hero-subtext {
+      margin-top: 18px;
+      font-size: 16px;
+      line-height: 1.8;
+      color: rgba(255, 255, 255, 0.92);
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-points {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .hero-point {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 10px 14px;
+      border-radius: 30px;
+      font-size: 13px;
+      color: white;
     }
 
     .hero-cta {
-      margin-top: 24px;
+      margin-top: 28px;
       display: flex;
       justify-content: center;
       gap: 12px;
@@ -63,13 +84,15 @@
 
     .join-btn {
       background: #FFD54F;
-      color: black;
-      padding: 12px 18px;
+      color: #000;
+      padding: 12px 20px;
       border-radius: 30px;
       text-decoration: none;
       font-size: 14px;
       font-weight: 700;
     }
+
+    /* MAIN */
 
     .container {
       max-width: 760px;
@@ -83,7 +106,7 @@
       border-radius: 18px;
       overflow: hidden;
       margin-top: 22px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
     }
 
     .section img {
@@ -99,41 +122,48 @@
       margin-top: 0;
       font-size: 24px;
       color: #B71C1C;
+      margin-bottom: 14px;
     }
 
     h3 {
       margin-top: 0;
       font-size: 20px;
       color: #B71C1C;
+      margin-bottom: 14px;
     }
 
     p {
       font-size: 14px;
       line-height: 1.8;
       color: #444;
+      margin-bottom: 14px;
     }
 
     ul {
-      padding-left: 18px;
-      line-height: 1.9;
-      font-size: 14px;
-      color: #444;
+      padding-left: 20px;
+      margin: 0;
     }
 
-    li {
-      margin-bottom: 6px;
+    ul li {
+      margin-bottom: 12px;
+      line-height: 1.8;
+      color: #444;
+      font-size: 14px;
     }
 
     .highlight {
       margin-top: 16px;
-      background: #FFF5F5;
+      background: #FFF4F4;
       border-left: 4px solid #C62828;
-      padding: 14px;
+      padding: 16px;
       border-radius: 10px;
-      font-size: 14px;
-      line-height: 1.7;
-      color: #333;
     }
+
+    .highlight ul {
+      margin: 0;
+    }
+
+    /* STICKY CTA */
 
     .sticky-cta {
       position: fixed;
@@ -175,7 +205,6 @@
     }
 
   </style>
-
 </head>
 
 <body>
@@ -184,20 +213,30 @@
 
   <div class="hero">
 
-    <h1>Close Motor Deals Faster.<br>Stress Less.</h1>
+    <h1>
+      Close Motor Deals Faster.<br>
+      Stress Less.
+    </h1>
 
-    <p>
-      Join our free live masterclass and learn the easiest way
-      to complete the Motor Offline Journey confidently.
-    </p>
+    <div class="hero-subtext">
+      Join our free live masterclass and learn the easiest way to complete the Motor Offline Journey confidently and close more deals with less confusion.
+    </div>
+
+    <div class="hero-points">
+      <div class="hero-point">✔ Practical Training</div>
+      <div class="hero-point">✔ Step-by-Step Journey</div>
+      <div class="hero-point">✔ Live Q&A</div>
+      <div class="hero-point">✔ Free Session</div>
+    </div>
 
     <div class="hero-cta">
 
       <div class="badge">
-        13 May 2026 | 3 PM – 4 PM
+        📅 13 May 2026 | ⏰ 3 PM – 4 PM
       </div>
 
-      <a href="YOUR_ZOOM_LINK" class="join-btn">
+      <a href="YOUR_ZOOM_LINK"
+        class="join-btn">
         Register Free
       </a>
 
@@ -218,13 +257,18 @@
         <h2>Motor Offline Journey Masterclass</h2>
 
         <p>
-          This practical 1-hour session will help you simplify the motor insurance process and close deals faster.
+          This practical 1-hour training session is designed to help you simplify the motor insurance sales process and close deals faster with more confidence.
         </p>
 
         <div class="highlight">
-          No complicated process.<br>
-          No confusion.<br>
-          Just a simpler way to sell motor insurance better.
+
+          <ul>
+            <li>No complicated process</li>
+            <li>No unnecessary confusion</li>
+            <li>Simple and practical guidance</li>
+            <li>Built specifically for partners</li>
+          </ul>
+
         </div>
 
       </div>
@@ -263,14 +307,13 @@
 
         <h3>Why You Should Attend</h3>
 
-        <p>
-          Most delays happen because the process feels complicated.
-        </p>
-
-        <p>
-          This session will help you simplify conversations,
-          reduce confusion, and improve conversions confidently.
-        </p>
+        <ul>
+          <li>Simplify your motor insurance conversations</li>
+          <li>Reduce delays and process confusion</li>
+          <li>Improve customer trust and confidence</li>
+          <li>Learn practical tips you can use immediately</li>
+          <li>Increase your ability to close deals faster</li>
+        </ul>
 
       </div>
 
@@ -282,7 +325,8 @@
 
   <div class="sticky-cta">
 
-    <a href="YOUR_ZOOM_LINK" class="cta-register">
+    <a href="YOUR_ZOOM_LINK"
+      class="cta-register">
       Register Free
     </a>
 
